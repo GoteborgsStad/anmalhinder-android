@@ -61,6 +61,13 @@
   <component name="RefactoringSettings">
     <option name="MOVE_PREVIEW_USAGES" value="false" />
   </component>
+  <component name="SvnApplicationSettings">
+    <option name="myTypedURLs">
+      <list>
+        <option value="https://github.com/avenyproduction/Goteborg-Stad---Anmal-hinder-android.git" />
+      </list>
+    </option>
+  </component>
   <component name="com.intellij.ide.fileTemplates.impl.FileTemplateManagerImpl">
     <recent_templates>
       <option name="RECENT_TEMPLATES">
