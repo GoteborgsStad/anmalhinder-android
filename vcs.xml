@@ -14,4 +14,7 @@
     </option>
     <option name="cloneParentDir" value="F:\Android-Studio\AndroidStudio-Installtions\Applications\GoteborgStad" />
   </component>
+  <component name="VcsApplicationSettings">
+    <option name="PATCH_STORAGE_LOCATION" value="F:\Android-Studio\AndroidStudio-Installtions\Applications\GoteborgStad" />
+  </component>
 </application>
