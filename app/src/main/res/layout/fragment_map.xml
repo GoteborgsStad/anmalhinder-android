@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/layout_map_parent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/layout_editor"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/list_row_bg_gray"
+                android:gravity="center">
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:gravity="left|center"
+                    android:imeOptions="actionSearch"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:layout_toLeftOf="@+id/btn_search"
+                    android:textColor="@color/parent_row_text_color"
+                    android:textSize="@dimen/text_size">
+                </AutoCompleteTextView>
+
+                <ImageView
+                    android:id="@+id/btn_search"
+                    android:layout_width="50dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:padding="13dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/btn_search"/>
+
+            </RelativeLayout>
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/map"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/layout_editor"
+                android:layout_marginTop="10dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

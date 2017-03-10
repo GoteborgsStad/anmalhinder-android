@@ -1,0 +1,207 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="3dp"
+                android:layout_weight="0.5"
+                android:background="#0749A1"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    android:weightSum="1">
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.3"
+                        android:padding="33dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/icon_1"/>
+
+                    <com.goteborgstad.custom.views.AutofitLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.7">
+
+                        <com.goteborgstad.custom.views.AutofitTextViewWithFont
+                            android:id="@+id/txt_title_1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:ellipsize="end"
+                            android:gravity="center|top"
+                            android:singleLine="true"
+                            android:text="Nästa"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/text_size_title"/>
+
+                    </com.goteborgstad.custom.views.AutofitLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_click1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="0.5"
+                android:background="#4D548F"
+                android:gravity="center">
+
+                <com.google.android.gms.maps.MapView
+                    android:id="@+id/map"
+                    android:layout_width="fill_parent"
+                    android:alpha="0.4"
+                    android:layout_height="fill_parent"/>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:padding="48dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/icon_2"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_click2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="3dp"
+                android:layout_weight="0.5"
+                android:background="#206145">
+
+                <ImageView
+                    android:id="@+id/img_user_pic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:alpha="0.4"
+                    android:scaleType="centerCrop"/>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:padding="48dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/icon_3"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_click3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="0.5"
+                android:background="#B50000"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.5"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.3"
+                        android:padding="33dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/icon_4"/>
+
+                    <com.goteborgstad.custom.views.AutofitLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.7">
+
+                        <com.goteborgstad.custom.views.AutofitTextViewWithFont
+                            android:id="@+id/txt_title_4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:ellipsize="end"
+                            android:gravity="center|top"
+                            android:singleLine="true"
+                            android:text="Nästa"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/text_size_title"/>
+
+                    </com.goteborgstad.custom.views.AutofitLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_click4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

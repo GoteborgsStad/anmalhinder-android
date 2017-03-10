@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true">
+
+        <com.goteborgstad.custom.views.AutofitTextViewWithFont
+            android:id="@+id/txt_title"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/list_row_bg_white"
+            android:gravity="center|left"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:text="txt_title"
+            android:textColor="@color/parent_row_text_color"
+            android:textSize="@dimen/text_size_title"/>
+
+        <ImageView
+            android:id="@+id/img_arrow"
+            android:layout_width="fill_parent"
+            android:layout_height="14dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/list_divider_arrow_gray"/>
+
+        <ImageView
+            android:id="@+id/img_arrow_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="14dp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/list_item_top_arrow_gray"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_child_items"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/layout_main_button"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#1177b9"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:weightSum="1">
+        <ImageView
+            android:id="@+id/img_title_1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.3"
+            android:padding="30dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_title"/>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.7">
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <com.goteborgstad.custom.views.AutofitTextViewWithFont
+            android:id="@+id/txt_title_1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center|bottom"
+            android:paddingBottom="45dp"
+            android:paddingTop="100dp"
+            android:lineSpacingExtra="8dp"
+            android:lines="2"
+            android:text="Nästa\nasdasdasd"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_size_title"/>
+    </RelativeLayout>
+
+</RelativeLayout>

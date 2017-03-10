@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <com.goteborgstad.custom.views.AutofitTextViewWithFont
+            android:id="@+id/btn_camera"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/img_row_selected"
+            android:gravity="center"
+            android:text="KAMERA"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_size_title"/>
+
+        <com.goteborgstad.custom.views.AutofitTextViewWithFont
+            android:id="@+id/btn_gallery"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/btn_camera"
+            android:background="@drawable/img_row_selected"
+            android:gravity="center"
+            android:text="VÄLJ BEFINTLIG\nBILD"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_size_title"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
